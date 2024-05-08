@@ -1,6 +1,7 @@
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   background-color: #13101d;
+  color: white;
 }
 
 header {
@@ -35,7 +36,7 @@ header h2 {
   margin: 0 0 64px 0;
 }
 
-header a {
+.learn-more-btn {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
@@ -53,6 +54,34 @@ section {
   max-width: 1250px;
   margin: 0 auto;
   padding: 100px 0;
+}
+
+main h3 {
+  color: #fb5c8d;
+  border-left: solid 5px #fb5c8d;
+  padding-left: 16px;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  text-align: left;
+  margin: 70px 0 10px;
+}
+
+main h2 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
+}
+
+main p {
+  opacity: 0.7;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 32px;
 }
 
 footer {
@@ -104,10 +133,25 @@ footer a {
   text-decoration: none;
 }
 
-.footer-grid {
+.profile-img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
   grid-gap: 64px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .tiffany-links {
   font-size: 14px;
@@ -134,5 +178,31 @@ footer a {
   }
   header a {
     font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+
+  section {
+    padding: 20px;
+    text-align: center;
+  }
+  main h3 {
+    margin-top: 20px;
+  }
+
+  main h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  main p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  footer h3 {
+    margin-bottom: 0;
   }
 }
